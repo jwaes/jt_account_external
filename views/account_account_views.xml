@@ -6,7 +6,7 @@
         <field name="model">account.account</field>
         <field name="inherit_id" ref="account.view_account_list" />
         <field name="arch" type="xml">
-            <xpath expr="//tree/field[@name='name']" position="after">
+            <xpath expr="//list/field[@name='name']" position="after">
                 <field name="external_use" widget="boolean_toggle" />
             </xpath>
         </field>

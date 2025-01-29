@@ -6,7 +6,7 @@
         <field name="model">account.move</field>
         <field name="inherit_id" ref="account.view_move_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//tree/field[@name='account_id']" position="attributes">
+            <xpath expr="//list/field[@name='account_id']" position="attributes">
                 <attribute name="domain" add="('external_use','=',True)" />
             </xpath>
         </field>
